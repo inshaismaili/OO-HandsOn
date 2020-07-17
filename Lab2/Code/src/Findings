@@ -1,0 +1,3 @@
+The AccManager class had not implemented the fillAccountData(Account a1) method,thus when we were running the code, we were getting null values.
+The method fillAccountData(Account a1) has  been implemented and is now taking the values thats been assigned in the  displayAccountData(Account a1).
+Thus it now displays the values as entered.
