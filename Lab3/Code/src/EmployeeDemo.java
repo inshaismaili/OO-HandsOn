@@ -26,19 +26,28 @@ public class EmployeeDemo {
 		System.out.println("Address Pin : ");
 		String pin = Console.readLine();
 		
+		Address adr=new Address();
+		adr.setAddress1(addrLine1);
+		adr.setAddress2(addrLine2);
+		adr.setCity(city);
+		adr.setpin(pin);
+		
+		emp.setEmpID(empId);
+		emp.setAddr(adr);
+		emp.setName(name);
 		
 
 
 	}
 	public static void showData(Employee emp) {
 		
-		System.out.println("Emp Id : ");
-		System.out.println("Name : ");
+		System.out.println("Emp Id : "+emp.getEmpId());
+		System.out.println("Name : "+emp.getEmpName());
 		System.out.println("--------------------------------------------");
-		System.out.println("Addr Line1 : ");
-		System.out.println("Addr Line2 : ");
-		System.out.println("City : ");
-		System.out.println("Pin : ");
+		System.out.println("Addr Line1 : "+emp.getAddr().getAddrLine1());
+		System.out.println("Addr Line2 : "+emp.getAddr().getAddrLine2());
+		System.out.println("City : "+emp.getAddr().getCity());
+		System.out.println("Pin : "+emp.getAddr().getPin());
 		System.out.println("--------------------------------------------");
 
 		
