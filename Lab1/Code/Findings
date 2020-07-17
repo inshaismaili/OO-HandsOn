@@ -1,0 +1,11 @@
+There are three classes:
+AccManager1,AccManager2and Account.
+AccManager1 and AccManager2 both has two methods within it ie..fillAccountData and displayAccountData.
+The class Account takes the input for both these classes
+We can clearly see that the AccNo declared in Account class has some format(string assinged with the prefix value which is concatenated with accno).
+when we run the program we see that the values that's assigned to the AccNo in the accMnager1 class has the missing prefix.Thats wrong.
+
+when we see the balance variable  also ,In the Account class the balance is calculated with some interest added to it,the same thing is retrieved by the
+AccManager2 class through getbalance() method but for the AccManager1 class the balance is simply assigned without any interest added to it,thats wrong.
+
+Therefore there is no problem with the class AccountManager2,that's working fine.
